@@ -1,0 +1,48 @@
+body {
+    display:grid;
+    grid-template-columns: repeat(4,1fr) ;
+    margin: 0;
+}
+
+header {
+    padding: 2rem;
+    grid-column: 1/5;
+    background-color: slategray;
+
+}
+
+nav {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1rem;
+    grid-column: 1/5;
+    background-color: black;
+    text-align: center;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    justify-content: center;
+}
+
+main {
+    padding: 2rem;
+    grid-column: 1/4;
+    background-color: darkgrey;
+}
+
+aside {
+    padding: 2rem;
+    grid-column: 4/5;
+    background-color: aliceblue;
+}
+
+footer{
+    padding: 2rem;
+    grid-column: 1/5;
+    background-color: slategray;
+    text-align:center;
+}
