@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #284d31;
+    width: 100%;
+
+}
+
+header h1 {
+    color: beige;
+}
+
+main h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: beige;
+}
+
+nav a:hover {
+    background-color: bisque;
+    color: rgb(36, 36, 36);
+    cursor: pointer;
+}
+
+#hamburger {
+    display: none;
+    /* Hidden by default */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: beige;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 5px;
+        background-color: #284d31;
+        padding: 1rem;
+        display: none;
+        width: 60px;
+        text-align: center;
+
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    /*hiding the nav*/
+    nav ul:not(.show) {
+        display: none;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+
+}
+
+
+
+footer {
+    background-color: #284d31;
+    color: beige;
+    text-align: center;
+}
