@@ -1,0 +1,52 @@
+* {
+    font-family: "Roboto";
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+}
+.aside {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 240px;
+    font-family: sans-serif;
+}
+
+.aside h2 {
+    background-color: #22703f;
+    /* or #116c31 for green */
+    color: white;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.data {
+    top: 20%;
+    left: 5%;
+}
+
+.weather {
+    bottom: 10%;
+    right: 5%; }
