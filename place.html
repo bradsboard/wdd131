@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canada</title>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-small.css">
     <script src="scripts/place.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,29 +19,39 @@
     </header>
 
     <main>
-
-        <img class="hero-large"
-
-        <div class="aside data">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Area:</strong> 9,984,670 km²</li>
-                <li><strong>Population:</strong> 40.1 million</li>
-                <li><strong>Capital:</strong> Ottawa</li>
-                <li><strong>Languages:</strong> English, French</li>
-                <li><strong>Currency:</strong> Canadian Dollar </li>
-                <li><strong>Calling Code:</strong> +1 </li>
-            </ul>
-        </div>
+        <div class="hero-container">
+            <img 
+                class="hero-image"
+                 
+                srcset="
+                images/image.webp 3000w, images/image-768.webp 768w"
+                src="images/image.webp"
+                
+                alt="Rockies">
         
-        <div class="aside weather">
-            <h2>Weather <span class="icon">⛅</span></h2>
-            <ul>
-                <li><strong>Temperature:</strong> ...</li>
-                <li><strong>Conditions:</strong> ...</li>
-                <li><strong>Wind:</strong> ...</li>
-                <li><strong>Wind Chill:</strong>... </li>
-            </ul>    </div>
+            <aside class="aside-data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 9,984,670 km²</li>
+                    <li><strong>Population:</strong> 40.1 million</li>
+                    <li><strong>Capital:</strong> Ottawa</li>
+                    <li><strong>Languages:</strong> English, French</li>
+                    <li><strong>Currency:</strong> Canadian Dollar </li>
+                    <li><strong>Calling Code:</strong> +1 </li>
+                </ul>
+            </aside>
+        
+            <aside class="aside-weather">
+                <h2>Weather <span class="icon">⛅</span></h2>
+                <img class="weather-svg" src="images/weather.svg">
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp"></span></li>
+                    <li><strong>Conditions:</strong> <span id="condition"></span></li>
+                    <li><strong>Wind:</strong> <span id="wind"></span> </li>
+                    <li><strong>Wind Chill:</strong> <span id="chill"></span> </li>
+                </ul> 
+            </aside>    
+        </div>
     </main>
 
     <footer>

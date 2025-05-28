@@ -1,52 +1,69 @@
 * {
     font-family: "Roboto";
+    box-sizing: border-box;
 }
 
-
-
-
-
-h1 {
-    text-align: center;
-}
-.aside {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 240px;
-    font-family: sans-serif;
-}
-
-.aside h2 {
-    background-color: #22703f;
-    /* or #116c31 for green */
-    color: white;
-    padding: 0.5rem;
-    margin: -1rem -1rem 1rem -1rem;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.aside ul {
-    list-style: none;
-    padding: 0;
+html,
+body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    
 }
 
-.aside li {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: maroon;
+    color: white;
 }
 
-.data {
-    top: 20%;
-    left: 5%;
+
+
+@media (min-width: 768px) {
+
+    .hero-image{
+        width:100%
+    }
+
+
+    .aside-data,
+    .aside-weather {
+        position: absolute;
+        width: 300px;
+        z-index: 10;
+        background-color: white;
+        margin-top: 0;
+    }
+
+    .aside-data {
+        top: 20%;
+        left: 5%;
+        
+    }
+
+    .aside-data h2,.aside-weather h2 {
+        background-color: maroon;
+        color: white;
+        padding: 0.75rem;
+        margin: 0;
+        text-align: center;
+        
+    }
+    .aside-weather {
+        bottom: 10%;
+        right: 5%;
+    }
+
+    .weather-svg {
+        display:none;
+    }
+   
 }
 
-.weather {
-    bottom: 10%;
-    right: 5%; }
+footer {
+    text-align: center;
+    color: white;
+    background-color: maroon;
+    padding: 1rem;
+}
