@@ -96,28 +96,50 @@ nav a:hover {
 }
 
 
+
 .temple-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
+    background-color: #d3ffc0;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
     margin: 1rem auto;
     max-width: 400px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temple-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.temple-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #284d31;
+    text-align: center;
+}
+
+.temple-card p {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 0.3rem 0;
+    text-align: center;
+}
+
+.temple-card p strong {
+    color: #111;
 }
 
 .temple-card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 4px; }
-
-
-figcaption {
-    margin-top: 0.5em;
-    text-align: center;
-    
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
 }
-
-
 
 footer{
     background-color: #284d31;
