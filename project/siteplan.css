@@ -1,0 +1,36 @@
+body {
+    background-color: #eee4af;
+    /* light parchment-style background */
+    font-family: 'Cinzel', serif;
+    color: #3d1a42;
+    /* deep purple */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background-color: #6e7f66;
+    /* main accent green */
+    color: #eee4af;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #3d1a42;
+
+}
+
+a {
+    color: #6e7f66;
+    text-decoration: none;
+}
+
