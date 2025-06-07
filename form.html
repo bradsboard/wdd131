@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review From</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Options populated by JS -->
+            </select>
+        
+            <!-- Overall rating -->
+            <fieldset id="rating">
+                <legend>Overall Rating</legend>
+                <div class="rating-stars">
+                    <div class="star-option">
+                        <label for="star1">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="star-option">
+                        <label for="star2">★★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                    </div>
+                    <div class="star-option">
+                        <label for="star3">★★★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                    </div>
+                    <div class="star-option">
+                        <label for="star4">★★★★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                    </div>
+                    <div class="star-option">
+                        <label for="star5">★★★★★</label>
+                        <input type="radio" id="star5" name="rating" value="5">
+                    </div>
+                </div>   
+            </fieldset>
+        
+            <!-- Date of installation -->
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required>
+        
+            <!-- Useful features -->
+            <fieldset>
+                <legend>Useful Features (Check all that apply):</legend>
+        
+                <input type="checkbox" id="feature1" name="features" value="Easy Setup">
+                <label for="feature1">Easy Setup</label><br>
+        
+                <input type="checkbox" id="feature2" name="features" value="Durable">
+                <label for="feature2">Durable</label><br>
+        
+                <input type="checkbox" id="feature3" name="features" value="Energy Efficient">
+                <label for="feature3">Energy Efficient</label>
+            </fieldset>
+        
+            <!-- Written review -->
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review" rows="4" cols="40"></textarea>
+        
+            <!-- Username -->
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username">
+        
+            <!-- Submit button --><input type="submit" value="Submit My Review">
+  </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bradley Crawford 🚣‍♂️ Canada</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

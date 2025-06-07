@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Background */
+body {
+    background-color: #f5fdf6;
+    padding: 2rem;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    /* Deep Green */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Form Container */
+form {
+    background-color: #d0e8d0;
+    /* Light green */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.star-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star-option label {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+.star-option input[type="radio"] {
+    transform: scale(1.2);
+    cursor: pointer; }
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Instructions / Subtext */
+form i,
+form label[for] span {
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Inputs, Select, Textarea */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Radio and Checkbox Group Styling */
+fieldset {
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #4caf50;
+    /* Medium green */
+    color: black;
+    font-weight: bold;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    width: 100%;
+    border: 2px solid #2e7d32;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #66bb6a;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem; }
